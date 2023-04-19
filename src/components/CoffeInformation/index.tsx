@@ -1,5 +1,5 @@
 import "./style.scss";
-import tradicional_express from "../../assets/tradicional_express.png";
+import { Minus, Plus, Trash } from "@phosphor-icons/react";
 
 interface CoffeInformationProps {
   image: string;
@@ -15,7 +15,19 @@ export function CoffeInformation({ image, type }: CoffeInformationProps) {
       <div className="type-and-quantity">
         <h6>{type}</h6>
         <div className="coffe-quantity">
-          <span></span>
+          <div>
+            <button>
+              <Minus size={14} color="var(--purple)" />
+            </button>
+            <span>1</span>
+            <button>
+              <Plus size={14} color="var(--purple)" />
+            </button>
+          </div>
+          <button className="remove-button">
+            <Trash size={16} color="var(--purple)" />
+            <p>REMOVER</p>
+          </button>
         </div>
       </div>
     </div>

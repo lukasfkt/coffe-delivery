@@ -6,6 +6,8 @@ import {
   Money,
 } from "@phosphor-icons/react";
 import "./style.scss";
+import { CoffeInformation } from "../../components/CoffeInformation";
+import tradicional_express from "../../assets/tradicional_express.png";
 
 export function Checkout() {
   return (
@@ -78,7 +80,14 @@ export function Checkout() {
       <section className="right-container">
         <h4>Cafés selecionados</h4>
 
-        <div className="request-informations"></div>
+        <div className="request-informations">
+          <CoffeInformation
+            image={tradicional_express}
+            type="Expresso Tradicional"
+            quantity={1}
+            unitPrice={9.9}
+          />
+        </div>
       </section>
     </main>
   );
