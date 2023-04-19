@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10rem 0 10rem;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      padding: 0.5rem;
+      font-weight: 400;
+      font-size: 0.875rem;
+
+      border-radius: 0.375rem;
+
+      color: var(--purple-dark);
+      background-color: var(--purple-light);
+    }
+    a {
+      padding: 0.5rem;
+      border-radius: 0.375rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--yellow-light);
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  header {
+    padding: 2rem;
+  }
+}

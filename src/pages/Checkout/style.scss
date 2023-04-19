@@ -1,0 +1,158 @@
+.checkout-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  padding: 2.5rem 10rem;
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    h4 {
+      color: var(--base-subtitle);
+      font-size: 1.125rem;
+      font-family: "Baloo 2";
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .address-informations {
+      display: flex;
+      flex-direction: column;
+      padding: 2.5rem;
+      background-color: var(--card);
+      border-radius: 6px;
+      gap: 2rem;
+
+      .address-description {
+        display: flex;
+        gap: 0.5rem;
+        span {
+          h6 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--base-subtitle);
+            line-height: 130%;
+          }
+          p {
+            color: var(--base-text);
+          }
+        }
+      }
+
+      form {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        input {
+          display: flex;
+          align-items: center;
+          padding: 0.75rem;
+          background: var(--base-input);
+          border: 1px solid var(--base-button);
+          border-radius: 4px;
+          font-size: 0.875rem;
+          color: var(--base-label);
+        }
+        div:first-of-type {
+          display: flex;
+          gap: 0.75rem;
+          align-items: center;
+          .input-complement {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            background: var(--base-input);
+            border: 1px solid var(--base-button);
+            border-radius: 4px;
+            outline: none;
+
+            padding: 0.75rem;
+            flex: 1;
+            input {
+              background: transparent;
+              outline: none;
+              border: none;
+              border-radius: 0;
+              padding: 0;
+            }
+            span {
+              font-style: italic;
+              font-size: 0.75rem;
+              color: var(--base-label);
+            }
+          }
+        }
+        div:last-of-type {
+          display: flex;
+          gap: 0.75rem;
+          align-items: center;
+          width: 100%;
+        }
+      }
+    }
+    .payment-container {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--card);
+
+      margin-top: 0.75rem;
+      padding: 2.5rem;
+
+      .payment-description {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+        span {
+          display: flex;
+          flex-direction: column;
+          h6 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--base-subtitle);
+          }
+          p {
+            font-size: 0.875rem;
+            color: var(--base-text);
+          }
+        }
+      }
+      .payment-method {
+        display: flex;
+        gap: 0.75rem;
+        button {
+          all: unset;
+
+          display: flex;
+          flex-direction: row;
+          flex: 1 1 0px;
+
+          gap: 0.75rem;
+          padding: 1rem;
+
+          cursor: pointer;
+          background: var(--base-button);
+          border-radius: 6px;
+
+          p {
+            font-size: 0.75rem;
+            color: var(--base-text);
+          }
+        }
+      }
+    }
+  }
+
+  .right-container {
+    display: flex;
+    flex-direction: column;
+
+    .request-informations {
+      display: flex;
+      flex-direction: column;
+
+      gap: 1.5rem;
+      padding: 2.5rem;
+    }
+  }
+}

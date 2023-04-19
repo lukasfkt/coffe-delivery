@@ -1,0 +1,99 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card);
+  padding: 1.25rem;
+  max-width: 16rem;
+  align-items: center;
+  position: relative;
+  border-radius: 6px 36px;
+  margin-bottom: 2.5rem;
+  img {
+    width: 7.5rem;
+    height: 7.5rem;
+    position: absolute;
+    top: -2.5rem;
+  }
+  .card-options-container {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 7rem;
+    .card-options {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.25rem 0.5rem;
+      background-color: var(--yellow-light);
+      border-radius: 100px;
+      margin-bottom: 1rem;
+      h4 {
+        font-size: 0.6rem;
+        font-weight: 700;
+        color: var(--yellow-dark);
+      }
+    }
+  }
+  h3 {
+    font-family: "Baloo 2";
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--base-subtitle);
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 0.875rem;
+    text-align: center;
+    font-weight: 400;
+    color: var(--base-label);
+    margin-bottom: 2rem;
+  }
+  .coffe-details-container {
+    display: flex;
+    align-items: center;
+    div {
+      font-size: 0.875rem;
+      color: var(--base-text);
+      .coffe-price {
+        font-family: "Baloo 2";
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+    }
+    .coffe-quantity-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: var(--base-button);
+      padding: 0.5rem;
+      margin-left: 1.4rem;
+      margin-right: 0.5rem;
+      border-radius: 6px;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--purple);
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .coffe-cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      background-color: var(--purple-dark);
+      border-radius: 6px;
+    }
+  }
+}
