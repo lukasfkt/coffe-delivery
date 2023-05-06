@@ -8,6 +8,7 @@ import {
 import "./style.scss";
 import { CoffeInformation } from "../../components/CoffeInformation";
 import tradicional_express from "../../assets/tradicional_express.png";
+import { NavLink } from "react-router-dom";
 
 export function Checkout() {
   return (
@@ -87,6 +88,33 @@ export function Checkout() {
             quantity={1}
             unitPrice={9.9}
           />
+          <CoffeInformation
+            image={tradicional_express}
+            type="Expresso Tradicional"
+            quantity={2}
+            unitPrice={9.9}
+          />
+          <div className="total-cost">
+            <span>
+              <p>Total de itens</p>
+              <p>R$ 29,70</p>
+            </span>
+            <span>
+              <p>Entrega</p>
+              <p>R$ 3,50</p>
+            </span>
+            <span>
+              <h3>Total</h3>
+              <h3>R$ 33,20</h3>
+            </span>
+          </div>
+          <NavLink
+            to="/orderInformations"
+            title="Checkout"
+            className="confirm-request"
+          >
+            CONFIRMAR PEDIDO
+          </NavLink>
         </div>
       </section>
     </main>

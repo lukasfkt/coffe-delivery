@@ -8,7 +8,14 @@ interface CoffeInformationProps {
   unitPrice: number;
 }
 
-export function CoffeInformation({ image, type }: CoffeInformationProps) {
+export function CoffeInformation({
+  image,
+  type,
+  quantity,
+  unitPrice,
+}: CoffeInformationProps) {
+  var finalPrice = quantity * unitPrice;
+  var priceString = finalPrice.toFixed(2).toString().replace(".", ",");
   return (
     <div className="coffe-information-container">
       <img src={image} />
@@ -30,6 +37,7 @@ export function CoffeInformation({ image, type }: CoffeInformationProps) {
           </button>
         </div>
       </div>
+      <h5 className="coffe-price">R$ {priceString}</h5>
     </div>
   );
 }

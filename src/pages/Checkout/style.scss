@@ -164,6 +164,69 @@
 
       background: var(--card);
       border-radius: 6px 44px;
+
+      .total-cost {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        span {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          p {
+            font-size: 0.875rem;
+            color: var(--base-text);
+          }
+          h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--base-subtitle);
+          }
+        }
+      }
+      .confirm-request {
+        border: none;
+        padding: 12px 8px 12px 8px;
+        border-radius: 6px;
+        background-color: var(--yellow);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .checkout-container {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    .left-container {
+      padding: 1rem;
+      max-width: 90vw;
+      .address-informations {
+        form {
+          div:first-of-type {
+            flex-direction: column;
+            align-items: initial;
+            .input-complement {
+              input {
+                max-width: 70%;
+              }
+              flex-direction: row;
+            }
+          }
+          div:last-of-type {
+            flex-direction: column;
+            align-items: initial;
+          }
+        }
+      }
     }
   }
 }
